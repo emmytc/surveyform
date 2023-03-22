@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<meta charset="utf-8"/>
+<meta ame="viewport" content="width=device-width, initial-scale= 1.0"/>
+<title> Survey Form </title>
+<link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> Please fill in the form below to help us serve you better </p>
+  <form id="survey-form"> 
+    <fieldset>
+      <label id="first-name" for="first-name"> First Name: <input id="first-name" type="text" required placeholder= "Enter your first name" /></label>
+      
+      <label id="last-name" for="last-name"> Last Name: <input id="last-name" type="text" required placeholder= "Enter your last/family name" /></label>
+     
+      <label id="email-label" for="email"> Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+     
+      <label id="number-label" for="number"> Number: <input id="number" type="number" placeholder="Enter your phone number" min="9" max="13" required /></label>
+     
+      <label id="age-label" for="age"> Age (optional): <input id="age" type="age" placeholder="How old are you?" /></label>
+
+      <label for="occupation"> Current Occupation: 
+      <select id="dropdown" name="occupation">
+        <option value="">(Select one)</option>
+        <option value="1"> Student </option>
+        <option value="2"> Healthcare Worker </option>
+        <option value="3"> Engineer </option>
+        <option value="4"> Tech </option>
+        <option value="5"> Law </option> 
+        <option value="6"> Other </option>
+         </select>
+</fieldset>
+         
+<fieldset>
+Would you help us in sharing this form to others?
+<label for="yes"><input id="yes" type="radio" name="answer" class="inline" value="yes" /> Yes </label>
+<label for="no"><input id="no" type="radio" name="answer" class="inline" value="no" /> No </label> 
+<label for="maybe"><input id="maybe" type="radio" name="answer" class="inline" value="maybe" /> Maybe </label> 
+</fieldset>
+
+<fieldset> What area(s) of tech would you like to get into?
+<label for="cybersecurity"><input id="cybersecurity" type="checkbox" name="cybersecurity" value="cybersecurity" /> Cybersecurity </label>
+<label for="data-analysis"><input id="data-analysis" type="checkbox" name="data-analysis" value="data-analysis" /> Data Analysis </label>
+<label for="cloud-computing"><input id="cloud-computing" type="checkbox" name="cloud-computing" value="cloud-computing" /> Cloud computing </label>
+<label for="software-engineering"><input id="software-engineering" type="checkbox" name="software-engineering" value="software-engineering" /> Software engineering </label>
+<label for="web-development"><input id="web-development" type="checkbox" name="web-development" value="web-development" /> Web development </label>
+<label for="other"><input id="other" type="checkbox" name="other" value="other" /> Other </label>
+If "Other" please indicate the area of tech: <input for="other" type="text" />
+</fieldset>
+
+<fieldset>
+<label for="comment"> What else would you like us to know about you? 
+<textarea id="comment" name="comment" rows="5" cols="40" placeholder="I have tried to code before...."></textarea> 
+</label>
+</fieldset>  
+
+<input type="submit" value="Submit" id="submit" />
+</form>
+</body>
+</html>
